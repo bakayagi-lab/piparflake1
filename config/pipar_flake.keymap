@@ -60,5 +60,23 @@
 &kp DELETE   &kp END          &kp PAGE_DOWN
             >;
         };
+
+        layer_3 {
+            bindings = <
+&kp F12  &kp F13  &kp F14
+&kp F15  &kp F16  &kp F17
+&kp F18  &kp F19  &kp F20
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_AL_KEYBOARD_LAYOUT C_AL_KEYBOARD_LAYOUT>;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans
+&trans  &trans  &trans
+&trans  &trans  &trans
+            >;
+        };
     };
 };
