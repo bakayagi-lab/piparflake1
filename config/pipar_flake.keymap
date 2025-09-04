@@ -55,20 +55,23 @@
 
         layer_2 {
             bindings = <
-&kp C_PAUSE  &kp PRINTSCREEN  &to 3
-&kp INS      &kp HOME         &kp PG_UP
-&kp DELETE   &kp END          &kp PAGE_DOWN
+&kp F12     &kp F13    &to 3
+&kp F14     &kp F15    &kp F16
+&kp K_COPY  &kp K_CUT  &kp K_PASTE
             >;
+
+            sensor-bindings = <&inc_dec_kp C_AL_KEYBOARD_LAYOUT C_AL_KEYBOARD_LAYOUT>;
+            label = "F";
         };
 
         layer_3 {
             bindings = <
-&kp F12  &kp F13  &to 4
-&kp F15  &kp F16  &kp F17
-&kp F18  &kp F19  &kp F20
+&kp C_PAUSE  &kp PRINTSCREEN  &to 4
+&kp INS      &kp HOME         &kp PG_UP
+&kp DELETE   &kp END          &kp PAGE_DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AL_KEYBOARD_LAYOUT C_AL_KEYBOARD_LAYOUT>;
+            label = "ins";
         };
 
         layer_4 {
