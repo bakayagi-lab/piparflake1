@@ -76,10 +76,12 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &to 5
-&trans  &trans  &trans
-&trans  &trans  &trans
+&kp HOME    &kp END    &to 5
+&kp F2      &kp ENTER  &kp LC(A)
+&kp K_COPY  &kp K_CUT  &kp K_PASTE
             >;
+
+            label = "copy paste";
         };
 
         layer_5 {
