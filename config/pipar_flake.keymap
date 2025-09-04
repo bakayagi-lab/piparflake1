@@ -76,9 +76,9 @@
 
         layer_4 {
             bindings = <
-&kp HOME    &kp END    &to 5
-&kp F2      &kp ENTER  &kp LC(A)
-&kp K_COPY  &kp K_CUT  &kp K_PASTE
+&kp K_CUT   &kp K_PASTE  &to 5
+&kp K_COPY  &kp ENTER    &kp LC(F2)
+&kp LC(A)   &kp HOME     &kp END
             >;
 
             label = "copy paste";
@@ -86,10 +86,12 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &to 0
-&trans  &trans  &trans
-&trans  &trans  &trans
+&kp K_CUT   &kp K_PASTE  &to 0
+&kp K_COPY  &kp UP       &kp F2
+&kp LEFT    &kp DOWN     &kp RIGHT
             >;
+
+            label = "Direction";
         };
     };
 };
